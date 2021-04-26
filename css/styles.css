@@ -1,0 +1,143 @@
+:root{
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-balckish-blue: hsl(219, 29%, 14%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+/* mobile desing*/
+* {
+    box-sizing: border-box;
+  }
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    margin: 55px 18px;
+    padding: 0;
+    background-color: var(--light-grayish-blue);
+}
+h2{
+    color: var(--light-grayish-blue);
+    font-weight: 600;
+    width: 90%;
+    
+}
+p{
+    color: var(--light-gray);
+    font-weight: 600;
+    width: 90%;
+}
+.main_container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
+    row-gap: 25px;
+  
+}
+/*first card*/
+.first_card{
+    background-color: var(--moderate-violet);
+    border-radius: 10px;
+    padding:20px;
+}
+.first_card .name{
+    color: white;
+}
+.first_card img{
+    border-color: #A775F1;
+    border-width: 3px;
+    border-style: solid;
+}
+.first_card .content{
+    opacity: 0.5;
+}
+/*second_card*/
+.second_card{
+    background-color: var(--very-dark-grayish-blue);
+    border-radius: 10px;
+    padding:20px;
+}
+.second_card .name{
+    color: white;
+}
+.second_card .content{
+    opacity: 0.7;
+}
+.second_card .status{
+    opacity: 0.7;
+}
+/*third_card*/
+.third_card{
+    background-color: white;
+    border-radius: 10px;
+    padding:20px;
+}
+.third_card h2{
+    color: var(--very-dark-grayish-blue);
+}
+.third_card .status{
+    color: var(--very-dark-grayish-blue);
+    opacity: 0.7;
+}
+.third_card .content{
+    opacity: 0.7;
+}
+.third_card p{
+    color: var(--very-dark-grayish-blue);
+}
+/*forth_card*/
+.forth_card{
+    background-color: var(--very-dark-balckish-blue);
+    border-radius: 10px;
+    padding:20px;
+}
+.forth_card img{
+    border-color: #A775F1;
+    border-width: 3px;
+    border-style: solid;
+}
+.forth_card .name{
+    color: white;
+    opacity: 1;
+}
+.forth_card p{
+    opacity: 0.7;
+}
+/*fifth_card*/
+.fifth_card{
+    background-color: white;
+    padding:20px;
+    border-radius: 10px;
+}
+.fifth_card h2{
+    color: var(--very-dark-grayish-blue);
+}
+.fifth_card p{
+    color: var(--very-dark-grayish-blue);
+}
+.fifth_card .content{
+    opacity: 0.6;
+}
+.fifth_card .status{
+    opacity: 0.7;
+}
+
+.personal_photo{
+    border-radius: 50%;
+    width: 2.5rem;
+}
+.personal_data img{
+    float: left;
+    margin-right: 1rem;
+}
+.personal_data p{
+    margin: 0;
+}
+.name{
+    font-size: 15px;
+    font-weight: 500;
+}
+.status{
+    font-size: 12px;
+    font-weight: 500;
+}
