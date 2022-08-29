@@ -1,0 +1,116 @@
+/*mobile design 375px or less*/
+body{
+    background: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
+.main_container{
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6, auto);
+    row-gap: 25px;
+}
+.card{
+    padding: 20px 30px;
+    border-radius: 15px;
+}
+.personal_data{
+    margin-bottom: 20px;
+}
+.personal_data img{
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+    max-width: 35px;
+    margin-top: 8px;
+    border-style: solid;
+}
+.personal_data p{
+    text-align: left;
+    border: 0px;
+    margin: 0px;
+}
+.name{
+    padding-top: 12px;
+    font-weight: 500;
+}
+.status{
+    font-weight: 100;
+    font-size: 11px;
+}
+.first_card{
+    background: hsl(263, 55%, 52%);
+    color: white;   
+}
+.first_card img{
+    border-color: hsl(263, 95%, 77%);
+}
+.intro{
+    font-size: 20px;
+}
+.content{
+    font-weight: 100;
+    font-size: 14px;
+}
+/*second_card*/
+.second_card{
+    background: hsl(217, 19%, 35%);
+    color: white;
+}
+.second_card .personal_photo{
+    border-style: none;
+}
+/*thrid_*/
+.third_card{
+    background: white;
+    color: hsl(217, 19%, 35%);
+}
+.third_card .personal_photo{
+    border-style: none;
+}
+/*forth_card*/
+.forth_card{
+    background: hsl(219, 29%, 14%);
+    color: white;
+}
+.forth_card .personal_photo{
+    border-color: hsl(263, 100%, 68%);
+}
+/*fifth_card*/
+.fifth_card{
+    background: white;
+    color: hsl(217, 19%, 35%);
+}
+.fifth_card .personal_photo{
+    border-style: none;
+}
+
+
+
+/*desktop design 375px onwards*/
+
+@media (min-width: 1220px){
+   .main_container{
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(2,auto);
+    row-gap: 30px;
+    column-gap: 30px;
+    padding: 7vw 20vw;
+   }
+   .first_card{
+    grid-column: 1 / 3;
+   }
+   .third_card{
+    grid-area: 2 / 1 / 3/ 2;
+  
+   }
+   .forth_card{
+    grid-area: 2 / 2 / 3 / 4;
+   
+   }
+   .fifth_card{
+    grid-area: 1 / 4 /3 / 5;
+    max-width: 10vw;
+   }
+}
